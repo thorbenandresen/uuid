@@ -7,6 +7,9 @@ func copyUuidToPasteBoard() {
     let pasteboard = NSPasteboard.general
     pasteboard.declareTypes([.string], owner: nil)
     pasteboard.setString(uuid, forType: .string)
+    
+    print("UUID copied!")
+    print(uuid)
 }
 
 copyUuidToPasteBoard()
